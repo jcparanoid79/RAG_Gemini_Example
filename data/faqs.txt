@@ -1,0 +1,22 @@
+Preguntas Frecuentes (FAQs)
+
+1. ¿Qué es el Agente RAG?
+El Agente RAG (Retrieval-Augmented Generation) es un sistema de inteligencia artificial que combina la recuperación de información con la generación de texto. Esto le permite buscar en una base de conocimiento y utilizar la información encontrada para generar respuestas precisas y contextualizadas a sus preguntas.
+
+2. ¿Cómo puedo interactuar con el Agente RAG?
+Puede interactuar con el Agente RAG a través de una interfaz de chat. Simplemente escriba su pregunta o consulta, y el agente le proporcionará una respuesta basada en la información disponible en su base de conocimiento.
+
+3. ¿Qué tipo de información puede proporcionar el Agente RAG?
+El Agente RAG puede proporcionar información sobre una amplia gama de temas, dependiendo de los documentos con los que haya sido entrenado. Esto puede incluir documentación técnica, comunicados de la empresa, preguntas frecuentes, y cualquier otro tipo de texto que se haya indexado en su base de conocimiento.
+
+4. ¿Es el Agente RAG capaz de aprender de nuevas preguntas?
+El Agente RAG no "aprende" en el sentido tradicional de modificar su modelo generativo con cada nueva pregunta. Sin embargo, su base de conocimiento puede ser actualizada y ampliada con nuevos documentos, lo que le permite acceder a información más reciente y diversa para sus respuestas.
+
+5. ¿Qué hago si el Agente RAG no puede responder mi pregunta?
+Si el Agente RAG no puede proporcionar una respuesta satisfactoria, es posible que la información no esté disponible en su base de conocimiento. En estos casos, le recomendamos reformular su pregunta o buscar la información a través de otros canales de soporte.
+
+6. ¿Cómo se asegura la privacidad de mis datos al usar el Agente RAG?
+La privacidad de sus datos es una prioridad. El Agente RAG está diseñado para procesar sus consultas de manera segura. Las políticas de privacidad detalladas sobre el manejo de datos están disponibles en [URL de políticas de privacidad].
+
+7. ¿Puedo solicitar nuevas funcionalidades para el Agente RAG?
+Sí, valoramos sus comentarios. Si tiene sugerencias para nuevas funcionalidades o mejoras, por favor, póngase en contacto con nuestro equipo de soporte a través de [correo electrónico de soporte] o el sistema de tickets en nuestra plataforma de soporte.

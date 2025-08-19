@@ -1,0 +1,33 @@
+Documentación Técnica del Agente RAG
+
+1. Arquitectura del Sistema
+
+El agente RAG (Retrieval-Augmented Generation) combina un modelo de recuperación de información con un modelo generativo para proporcionar respuestas precisas y contextualizadas. La arquitectura se compone de los siguientes módulos principales:
+
+    Módulo de Ingesta de Datos: Encargado de procesar y almacenar documentos de diversas fuentes (PDFs, TXT, HTML, etc.) en un formato optimizado para la recuperación. Utiliza técnicas de preprocesamiento de texto, como tokenización, lematización y eliminación de stopwords.
+
+    Base de Conocimiento (Vector Database): Almacena las representaciones vectoriales (embeddings) de los documentos. Permite búsquedas semánticas eficientes para encontrar los fragmentos de texto más relevantes a una consulta. Se utiliza FAISS para la indexación y búsqueda de vectores.
+
+    Módulo de Recuperación (Retriever): Recibe la consulta del usuario, la transforma en un embedding y la utiliza para buscar los documentos más relevantes en la base de conocimiento. Los documentos recuperados se pasan al módulo generativo.
+
+    Módulo Generativo (Generator): Un Large Language Model (LLM) que toma la consulta original del usuario y los documentos recuperados por el retriever para generar una respuesta coherente y bien informada. El LLM se encarga de sintetizar la información y presentarla de manera natural.
+
+2. Flujo de Trabajo del Agente
+
+    Consulta del Usuario: El usuario envía una pregunta o consulta al agente.
+    Preprocesamiento de Consulta: La consulta se limpia y se convierte en un embedding.
+    Recuperación de Documentos: El embedding de la consulta se utiliza para buscar los k documentos más relevantes en la base de conocimiento vectorial.
+    Generación de Respuesta: Los documentos recuperados y la consulta original se envían al LLM. El LLM genera una respuesta basada en la información proporcionada.
+    Respuesta al Usuario: La respuesta generada se presenta al usuario.
+
+3. Tecnologías Utilizadas
+
+    Python: Lenguaje de programación principal.
+    Langchain: Framework para el desarrollo de aplicaciones basadas en LLMs.
+    FAISS: Biblioteca para la búsqueda de similitud eficiente de vectores.
+    Hugging Face Transformers: Para modelos de embeddings y LLMs.
+    Sentence Transformers: Para la creación de embeddings de texto.
+
+4. Despliegue y Escalabilidad
+
+El agente está diseñado para ser modular, lo que facilita su despliegue en diferentes entornos (local, nube). La base de conocimiento vectorial puede escalarse horizontalmente para manejar grandes volúmenes de datos. El módulo generativo puede ser un LLM alojado localmente o a través de una API de terceros.
