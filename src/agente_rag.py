@@ -45,3 +45,13 @@ qa_chain = RetrievalQA.from_chain_type(
 pregunta = "¿Qué es un agente RAG?"
 respuesta = qa_chain.invoke({"query": pregunta})
 print(respuesta['result'])
+
+# Hacer una pregunta
+pregunta = "¿Cuáles son los elementos de un agente RAG?"
+respuesta = qa_chain.invoke({"query": pregunta})
+print(respuesta['result'])
+
+# Hacer una pregunta
+pregunta = "¿Cual es la tarea de cada elemento un agente RAG?"
+respuesta = qa_chain.invoke({"query": pregunta})
+print(respuesta['result'])
